@@ -1,0 +1,805 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; 
+    /* border:none; */
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+.btn{
+  display: inline-block;
+ 
+  padding:.6rem 1.8rem;
+   background: #28ADFF;
+  color:#fff;
+  font-size: 1.6rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  cursor: pointer;
+}
+.btn:hover{
+  letter-spacing: .1rem;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+
+.text-ceter{
+    text-align: center;
+    color: #fff;
+    font-size: 1.7rem;
+    background-color: aqua;
+}
+.header{
+    position: sticky;
+    top:0; left: 0; right:0;
+    z-index: 1000;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    background:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+.logo{
+    font-size: 2.5rem;
+    color:#000;
+    font-weight: bolder;
+}
+.navbar a{
+    margin:0 1.5rem;
+    font-size: 1.7rem;
+    color:#000;
+}
+.navbar a:hover{
+    color: aqua;
+}
+.icons div,
+  .icons a{
+    height:4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.7rem;
+    color:#000;
+    margin-left: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icons>div:hover{
+    background-color: aqua;
+      color: #fff;
+}
+  .icons a:hover{
+      background-color: aqua;
+      color: #fff;
+  }
+#menu-btn{
+    display: none;
+  }
+
+  .search-form{
+    position: absolute;
+    top:99%; left:0; right:0;
+    height: 6rem;
+    background: #fff;
+    border-top: .2rem solid #000;
+    border-bottom :.2rem solid #000;
+    display:flex;
+    align-items:center;
+    padding:0 2rem;
+    clip-path:polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+  .active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .search-form input{
+    width: 100%;
+    font-size: 1.6rem;
+    color:#666;
+    text-transform: none;
+    border: none;
+  }
+  label{
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    color:#000;
+    cursor: pointer;
+  }
+
+  label:hover{
+    color: aqua;
+  }
+
+hr{
+  background-color: #999;
+}
+
+
+
+
+  .home{
+   
+    height: 40rem;
+    width: 100%;
+  }
+  .home>img{
+    width: 100%;
+    height: 100%;
+  }
+  .danhmuc{
+    height: 20rem;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* .swiper-slide img {
+    display: block;
+    
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  } */
+  /* width: 45rem; */
+.newproduct{
+  padding: 3rem 9%;
+  
+}
+.title{
+  text-align: center;
+  margin: 2rem 0 ;
+  font-size: 3rem;
+  color: #222;
+
+}
+  .box{
+    flex: 0 0 20%;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  .flex-255{
+    flex: 0 0 25%;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  .box_con{
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.2);
+    border-radius: .5rem;
+    padding: 1rem;
+  }
+  .box_con>img{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+  }
+  .box_con>h3{
+    margin: 1rem 0;
+    
+  }
+  .box_con>a{
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    color: #000;
+    
+  }
+  .box_con>a:hover{
+      color: #28ADFF;
+  }
+  .box_con p span{
+    color: red;
+    margin-bottom: 2rem;
+  }
+
+  
+
+
+
+
+  .selling_products{
+    padding: 3rem 9%;
+  }
+
+
+
+
+
+
+
+
+
+  
+  .d-flex{
+    display: flex;
+    flex-wrap: wrap;
+  }
+.images{
+  flex: 0 0 50%;
+  position: relative;
+  height: 55.8rem;
+  
+}
+.images>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+.images>.text{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-55%);
+}
+.text>h1{
+    color: #fff;
+    font-size: 4rem;
+    margin: 1.8rem 0;
+}
+.text>a{
+  margin: 1rem 0;
+}
+.doan_van{
+  flex: 0 0 50%;
+  padding: 6rem 5rem;
+  background-color: #F5F5F5;
+  font-size: 1.7rem;
+}
+
+
+
+  
+
+
+.footer{
+  padding: 2rem 9%;
+}
+
+
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap:1.5rem;
+}
+
+.footer .box-container .footer_box h3{
+  font-size: 2.2rem;
+  color:#222;
+  padding:1rem 0;
+}
+
+.footer .box-container .footer_box a{
+  display: block;
+  font-size: 1.4rem;
+  color:#666;
+  padding:1rem 0;
+}
+
+.footer .box-container .footer_box a i{
+  color:aqua;
+  padding-right: .5rem;
+}
+
+.footer .box-container .footer_box a:hover i{
+  padding-right: 2rem;
+}
+
+.footer .box-container .footer_box .map{
+  width:100%;
+}
+
+.footer .share{
+  padding:1rem 0;
+  text-align: center;
+}
+
+.footer .share a{
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color:#fff;
+  background:aqua;
+  margin:0 .3rem;
+  border-radius: 50%; 
+}
+
+.footer .share a:hover{
+  background:#222;
+}
+
+.footer .credit{
+  border-top: .2rem solid #000;
+  margin-top: 2rem;
+  padding:0 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color:var(--light-color);
+  text-align: center;
+}
+
+.footer .credit span{
+  color:aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  landing page danh mục*/
+
+.title_danhmuc{
+  padding: 1rem 9%;
+  background-color: #999;
+  font-size: 1.7rem;
+}
+
+main{
+  display: flex;
+  padding: 2rem 9%;
+  position: relative;
+}
+.boloc{
+  background-color: #999;
+  display: flex;
+  padding: 1rem 2%;
+  justify-content: space-between;
+  margin: 1rem 3rem;
+  cursor: pointer;
+  
+  
+}
+ul{
+  list-style: none;
+}
+.dk_loc{
+  flex: 0 0 30%;
+  padding: 1rem;
+  background-color: #fff;
+  
+}
+.sp_loc{
+  flex: 0 0 70%;
+}
+.none{
+  display: none;
+  
+}
+.block{
+  display: block;
+}
+
+.sapxep{
+  display: flex;
+  justify-content: space-between;
+  background-color:#F5F5F5;
+}
+
+.font-size1{
+  font-size: 1.7rem;
+}
+.font-size2{
+  font-size: 2.5rem;
+}
+
+
+
+/* trang chi tiết sản phẩm*/
+
+
+.chitietsp{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+
+}
+.chitietsp_anh{
+  flex: 0 0 60%;
+  
+}
+.chitietsp_thongtin{
+  flex: 0 0 40%;
+  padding: 1rem;
+}
+
+.img_chinh{
+  max-width: 60rem;
+  height: 40rem;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ten-sp{
+  font-size: 2.2rem;
+  padding: .8rem 0;
+  
+}
+.giatien{
+  color: red;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.gia-sp{
+  font-size: 1.8rem;
+  color: red;
+  margin: 1rem 0;
+}
+.gia-bi-gach{
+  text-decoration-line: line-through;
+  font-size: 1.6rem;
+  color: #666;
+  margin-left: 1rem;
+}
+
+.form-tt-sp{
+  margin: 1.6rem 0;
+}
+.mau-sp{
+  display: flex;
+  margin: 1rem 0;
+}
+.mau{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-left: 1rem;
+  padding: .2rem;
+  background-clip: content-box;
+ 
+}
+.boder{
+  border: 1px solid #333;
+}
+.mau-den{
+  background-color: #000;
+}
+.mau-do{
+  background-color: red;
+}
+.mau-vang{
+  background-color: yellow;
+}
+.soluong{
+  width: 100%;
+  margin: 2rem 0;
+}
+.form-group{
+ padding: .4rem .8rem;
+ border: 1px solid #666;
+ max-width: 40%;
+ margin: 1rem 0 ;
+ border-radius: 5px;
+ overflow: hidden;
+}
+.form-group>input{
+  border: none;
+}
+.submit{
+  margin-top: 2rem;
+}
+.submit>input{
+  padding: 1rem 4rem;
+  cursor: pointer;
+  background-color: aqua;
+  color: white;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  
+  margin: 0;
+}
+.gioithieu{
+  margin: 2rem 0;
+}
+.gioithieu>h3{
+  font-size: 1.8rem;
+}
+.content{
+  margin-top: 2rem;
+}
+.content>h3{
+  font-size: 2rem;
+}
+.content>p{
+  font-size: 1.7rem;
+}
+
+.san_pham_lienquan{
+    padding: 2rem 9%;
+}
+.san_pham_lienquan>h1{
+  font-size: 3rem;
+  text-align: center;
+}
+
+
+@media (max-width:991px){
+
+    html{
+      font-size: 55%;
+    }
+  
+    .header{
+      padding:1.5rem 2rem;
+    }
+  
+    section{
+      padding:3rem 2rem;
+    }
+
+    .newproduct{
+      padding: 2rem 2%;
+      margin: 0 auto;
+    }
+
+    .selling_products{
+      padding: 3rem 2%;
+      margin: 3rem auto;
+    }
+    .box{
+      flex: 0 0 25%;
+    }
+    .flex-255{
+      flex: 33.3%;
+    }
+    
+    .chitietsp{
+      padding: 2rem;
+    }
+    .chitietsp_thongtin{
+      flex: 0 0 30%;
+      
+    }
+    .san_pham_lienquan{
+      padding: 3rem 2rem;
+    }
+    
+  }
+
+
+  @media (max-width:768px){
+
+    
+    #menu-btn{
+        display: inline-block;
+      }
+      .navbar{
+        position: absolute;
+        top:99%; left:0; right:0;
+        background: #fff;
+        border-top:.2rem solid #000;
+        border-bottom:.2rem solid #000;
+        padding:0 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+      .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin:3rem 1rem;
+      }
+      .box{
+        flex: 0 0 33.3%;
+      }
+      .flex-255{
+        flex: 0 0 33.3%;
+      }
+      .dk_loc{
+        width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 0 8rem;
+          clip-path:polygon(0 0, 100% 0, 100% 0, 0 0);
+      }
+      .sp_loc{
+        flex: 0 0 100%;
+      }
+      .sapxep{
+        display: none;
+      }
+
+
+      .images{
+        flex: 0 0 100%;
+        
+        height: 30rem;
+        
+      }
+      .doan_van{
+        flex: 0 0 100%;
+        
+      }
+
+      .footer{
+        padding: 2rem 2%;
+      }
+      .footer_box{
+        flex: 0 0 50%;
+      }
+      .none{
+        display: block;
+      }
+      .block{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+      .chitietsp{
+        padding: 1rem;
+      }
+      .chitietsp_thongtin{
+        flex: 0 0 100%;
+        margin-left: 2rem;
+      }
+  }
+
+
+
+  @media (max-width:450px){
+
+    html{
+      font-size: 50%;
+    }
+  
+    
+    .home .slide .content>h3{
+        font-size: 4rem;
+    }
+    .home .slide .content>span{
+        font-size: 2.5rem;
+    }
+    .banner .content{
+      margin:3rem 0;
+    }
+    .box{
+      flex: 0 0 50%;
+      
+    }
+    .selling_products{
+      padding: 3rem 0;
+    }
+  
+  }
+  
+  
+  
+  .nho{
+    width: 260px;
+    height: 1px;
+    background-color: rgb(10, 10, 10);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .bentrai1{
+  border: 1px solid rgb(151, 151, 151);
+  display: block;
+  padding: 20px;
+  margin-left: 50px;
+  margin-top: 30px;
+  
+  }
+  p{
+    font-size: 16px;
+    /* text-align: center; */
+    
+  }
+  
+  .chu1{
+    display: flex;
+    padding-top: 20px;
+    
+  }
+  h4{
+    margin-left: 15px;
+  }
+  .nho4{
+    width: 260px;
+    height: 1px;
+    background-color: rgb(10, 10, 10);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .benphai{
+  border: 1px solid rgb(151, 151, 151);
+  display: block;
+  padding: 20px;
+  margin-left: 50px;
+  margin-top: 30px;
+  
+  }
+  .chinh{
+    display: flex;
+    padding-top: 20px;
+  
+  }
+  .phanchinh{
+    padding-left: 50px;
+    margin-top: 0;
+  }
+  .chu9{
+    margin-top: 20px;
+    font-size: 36px;
+  }
+  .anh6{
+    display: flex;
+    padding: 10px;
+  }
+  .anh6>h3{
+    padding-left: 20px;
+    
+  }
+  .mary{
+    background: rgb(235, 234, 234);
+    width: 100%;
+    display: flex ;
+    padding: 10px;
+  
+  }
+  .rery{
+    padding-left: 60px ;
+    display: flex;
+  }
+  .rery>h2{
+    padding: 12px;
+  }
+  .mury{
+    margin-left: 60px;
+    height: 40px;
+    width: 600px;
+  
+  }
+  .very{
+    height: 40px;
+    width: 90px;
+    background-color: rgb(26, 167, 223);
+    color: #eee;
+    border: none;
+  }
+  .cery{
+    font-size: 12px;
+    padding: 15px;
+  }
+  
